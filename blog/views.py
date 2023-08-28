@@ -1,12 +1,16 @@
 from django.shortcuts import render
-# from django.http import HttpResponse
 
 # Create your views here.
 
+context = {
+    'text': 'BLOG',
+    'title': 'Blog'
+}
+
 
 def blog(request):
-    return render(request, 'blog/index.html')
-
-
-def exemplo(request):
-    return render(request, 'blog/exemplo.html')
+    return render(
+        request,
+        'blog/index.html',
+        context
+    )
