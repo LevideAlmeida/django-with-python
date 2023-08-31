@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+a {
+    color: rgb(16, 200, 251);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(16, 200, 251);
+    text-decoration: underline;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -18,7 +28,7 @@ body {
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.posts {
+.content {
     display: grid;
     gap: 1.5rem;
     padding: 1.5rem;
@@ -30,8 +40,25 @@ body {
     box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.menu {
+    background: black;
+    padding: 0 1.5rem;
+
+}
+
+.menu__links {
+    list-style: none;
+    display: flex;
+}
+
+.menu__links a {
+    display: block;
+    color: #fff;
+    padding: 1.5rem;
+}
+
 @media (min-width: 600px) {
-    .posts {
+    .content {
         grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
     }
 }
